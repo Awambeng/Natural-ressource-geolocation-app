@@ -1,0 +1,139 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* > * {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+}
+
+/* body{
+  background: #6d6b6b;  
+} */
+
+.home1{
+  font-size: 60px;
+  color: black;
+  /* color: hsl(117, 71%, 31%); */
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.home1:hover{
+  color: hsl(117, 71%, 31%);
+}
+ 
+.test {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+} 
+
+.register{
+  max-width: 978px;
+  width: 100vw;
+  display:flex;
+  border: 1px solid #97b7d7;
+  border-radius: 15px;
+  box-shadow: 1px 3px 10px #114900; 
+  background-color: white;
+  height: auto;
+}
+
+.register span{
+  color: #adb5bd;
+}
+
+#form{
+  max-width: 320px;
+  width: 100vw;
+  margin: 1.5em auto;
+}
+
+#form >  input, .btn1{
+  border: 1px solid #e9ecef;
+  padding: 1em 1em;
+  margin-top: 1.5em;
+  font-weight: bold;
+  font-size: 1.3em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#form > input:focus{
+  outline: none;
+}
+
+#form > .btn1{
+  background-color: #114900;
+  color: #e9ecef;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.flex{
+  display: flex;
+  gap: 1em;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.register .col-2{
+  margin: auto;
+  padding: 3em 0;
+}
+
+.register .col-1 img{
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
+  align-self: flex-end;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
+  margin: auto;
+  padding: auto;
+  border-radius: 0 15px 15px 0;
+  background-size: cover;
+  animation: rotate 30s linear alternate infinite;
+}
+
+.col-1{
+  /* background: #c3c6c8; */
+  /* background: -webkit-linear-gradient(to right, #dadada, #cbc6c6, #aaabab);   */
+  /* background: linear-gradient(to right, #8e8e90, #d8d8dc, #d8d8dc, #e0dfe1, #959697); */
+  background: url("../../assets/walpaper.jpg");
+  border-radius: 0 15px 15px 0;
+}
+
+@keyframes rotate {
+  from{
+    background-position-x: 100%;
+    transform: rotate3d(1, 1, 1, 15deg);
+  }  
+}
+
+@media screen and (min-width: 860px)  {
+  .register .col-1 img{
+    display: initial;
+  }
+}
+
+#form > .btn a{
+  background-color: #114900;
+  color: #e9ecef;
+  font-size: 1.1em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.error_msg{
+  color: red;
+}
+
+h2{
+  color: #114900;
+}

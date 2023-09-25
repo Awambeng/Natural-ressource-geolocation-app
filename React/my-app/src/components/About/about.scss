@@ -1,0 +1,133 @@
+:root{
+  --PrimaryColor: hsl(117, 71%, 31%);
+  --HoverColor: hsl(26, 90%, 42%);
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(0, 0%, 18%);
+  --textColor: hsl(240, 1%, 48%);
+  --whiteColorDeam: hsl(0, 0%, 93%);
+  --greyBg: hsl(0, 0%, 96%);
+  --greyText: rgb(190, 190, 190);
+  --inputColor: hsl(330, 12%, 97%);
+}
+
+.about{
+  .secContainer{
+    .title{
+      color: var(--blackColor);
+      line-height: 1.5rem;
+      padding-bottom: 2rem;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    .mainContent{
+      gap: 1rem;
+      .singleItem{
+        text-align: center;
+
+        Walpaper{
+          background: rgba(247,144,54,0.265);
+          width: 100px;
+          border-radius: 50%;
+          padding: 1rem;
+        }
+
+        h2{
+          font-weight: 700;
+          color: var(--blackColor);
+          padding: .5rem;
+        }
+
+        p{
+          font-style: 13px;
+          font-weight: 500;
+          padding-bottom: .5rem;
+          color: var(--textColor);
+        }
+      }
+    }
+
+    .videoCard{
+      margin-top: 2rem;
+      background-image: linear-gradient(to top, rgba(0, 0, 0, 0.73),
+       rgba(0, 0, 0, 0.609)), url(../../assets/walpaper.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+
+      .cardContent{
+        gap: 2rem;
+        padding: 2rem 1rem;
+
+        .cardText{
+          h2{
+            color: var(--whiteColor);
+            font-weight: 600;
+            padding-bottom: 1rem;
+          }
+
+          p{
+            color: var(--whiteColor);
+            opacity: .7;
+            font: 12px;
+            font-weight: 400;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      .cardVideo{
+        border: 2px solid var(--whiteColor);
+        height: auto;
+        width: 100%;
+        border-radius: 10px;
+        overflow: hidden;
+        background: #fff;
+
+        img{
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 720px) {
+ .about{
+  .secContainer{
+    .videoCard{
+      .cardContent{
+        gap: 4rem;
+        padding: 4rem 3rem;
+
+        .cardText{
+          h2{
+            font-size: 2rem;
+          }
+
+          p{
+            opacity: .7;
+            font-style: 15px;
+          }
+        }
+      }
+
+      .cardContent{
+        grid-template-columns: repeat(2, 1fr) !important;
+      }
+    }
+  }
+ }
+} 
+
+@media screen and (min-width: 1024px) {
+  .about{
+    .secContainer{
+      .mainContent{
+        padding: 2.5rem 0;
+      }
+    }
+  }
+ } 

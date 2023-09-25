@@ -1,0 +1,19 @@
+.log-out{
+  display: block;
+  margin: 10%;
+  padding-top: 150px;
+  text-align: center;
+  line-height: 3rem;
+}
+
+a{
+  color: blue;
+}
+
+a:hover{
+  color: red;
+}
+ 
+
+
+

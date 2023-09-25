@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* > * {
+  font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+/* body{
+  background: #6d6b6b;  
+} */
+
+.home2{
+  font-size: 60px;
+  color: black;
+  /* color: hsl(117, 71%, 31%); */
+  position: absolute;
+  top: 25px;
+  left: 15px;
+}
+
+.home2:hover{
+  color: hsl(117, 71%, 31%);
+}
+
+.test {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h2{
+  color: #114900;
+}
+
+.register{
+  max-width: 978px;
+  width: 100vw;
+  display:flex;
+  border: 1px solid #97b7d7;
+  border-radius: 15px;
+  box-shadow: 1px 3px 10px #114900; 
+  background-color: white;
+  height: auto;
+}
+
+.register span{
+  color: #adb5bd;
+}
+
+#fom{
+  max-width: 320px;
+  width: 100vw;
+  margin: 1.5em auto;
+}
+
+#fom >  input, .btn1{
+  border: 1px solid #e9ecef;
+  padding: 1em 1em;
+  margin-top: .1em;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#fom > input:focus{
+  outline: none;
+}
+
+#fom > .btn1{
+  background-color: #114900;
+  color: #e9ecef;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+.flex{
+  display: flex;
+  gap: 1em;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.register .col-2{
+  margin: auto;
+  padding: 3em 0;
+}
+
+.register .col-1 img{
+  width: 500px;
+  height: 100%;
+  object-fit: cover;
+  align-self: flex-end;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
+  border-radius: 0 15px 15px 0;
+  animation: rotate 30s linear alternate infinite;
+}
+
+.col-1{
+  background: url("../../assets/walpaper.jpg");
+  border-radius: 0 15px 15px 0;
+}
+
+@keyframes rotate{
+  100%{
+    background-position-x: 100%;
+    transform: rotate3d(0, 1, 0, 360deg);
+  }
+}
+
+
+@media screen and (min-width: 860px)  {
+  .register .col-1 img{
+    display: initial;
+  }
+}
+
+#img2{
+  background: rgb(198, 198, 198);
+}
+#fom > .btn a{
+  background-color: #114900;
+  color: #e9ecef;
+  font-size: 1.1em;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn_signin{
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+}

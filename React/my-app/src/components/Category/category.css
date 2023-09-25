@@ -1,0 +1,164 @@
+form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  max-width: 800px;
+  margin: 0px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.addres,
+textarea,
+select {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+button[type="submit"] {
+  background-color: hsl(117, 71%, 31%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button[type="submit"]:hover {
+  background-color: hsl(117, 71%, 31%);
+}
+
+.error {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 100px;
+  background: #ddd;
+}
+
+.table-container h1{
+  color: hsl(117, 71%, 31%);
+  text-align: center;
+  font-size: 20px;
+}
+
+.table-container button{
+  background: hsl(117, 71%, 31%);
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 1rem;
+  padding: .4rem 1.5rem;
+}
+
+.table-container a{
+ color: #fff;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 0.75rem;
+  vertical-align: top;
+  border-top: 1px solid #dee2e6;
+}
+
+.table thead th {
+  vertical-align: bottom;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody + tbody {
+  border-top: 2px solid #dee2e6;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #f9f9f9;
+}
+
+.table-hover tbody tr:hover {
+  background-color: #e9ecef;
+}
+
+.table-bordered {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border: 1px solid #dee2e6;
+}
+
+.table-bordered thead th,
+.table-bordered thead td {
+  border-bottom-width: 2px;
+}
+
+.btn-icons {
+  margin: 0.35rem;
+  width: 20px;
+  height: 20px;
+}
+
+
+.table-responsive {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+@media (max-width: 575.98px) {
+  .table-responsive {
+    width: 100%;
+    margin-bottom: 15px;
+    overflow-y: hidden;
+    border: 1px solid #ddd;
+  }
+  .table-responsive > .table thead > tr > th,
+  .table-responsive > .table tbody > tr > th,
+  .table-responsive > .table tfoot > tr > th,
+  .table-responsive > .table thead > tr > td,
+  .table-responsive > .table tbody > tr > td,
+  .table-responsive > .table tfoot > tr > td {
+    white-space: nowrap;
+  }
+}
+
+.table img {
+  max-width: 100px;
+  max-height: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

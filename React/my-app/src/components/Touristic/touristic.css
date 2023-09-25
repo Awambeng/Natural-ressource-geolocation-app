@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:wght@600&display=swap');
+
+.touristic{
+  margin: 10px 10%;
+  font-family: 'Noto Sans JP', sans-serif;
+  line-height: 1.5rem;
+}
+
+.article h1,
+.article .auteur1{
+  padding-bottom: 20px;
+  color: rgb(8, 46, 150);
+}
+
+.articles{
+  margin-top: 30px;
+}
+
+.articles .article{
+  display: flex;
+  flex-wrap:wrap;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.articles .article .left img{
+  height: 300px;
+  width: 500px;
+  padding-top: 15px;
+}
+.articles .article .right{
+  margin-left: 40px;
+  max-width: 50%;
+  padding-top: 15px;
+}
+
+.articles .article .right p.date{
+  color: #7f7e7e;
+}
+.articles .article .right p.description{
+  color: #2d2d2d;
+}
+
+
+@media screen and (max-width: 640px){
+  .touristic{
+    margin: 10px 20px;
+  }
+  nav .onglets{
+    margin-top: -10px;
+  }
+  .articles .article .left img{
+    height: 100%;
+    width:100%;
+  }
+  .articles .article .right{
+    margin: 0px;
+    max-width: 100%;
+  }
+
+  .articles .article .right p{
+    text-align:justify;
+  }
+}
